@@ -33,7 +33,8 @@ body, html {
 .content {
     z-index: 2;
     padding: 20px;
-    max-width: 900px;
+    /* max-width: 900px; */
+    max-width: 90vw;
     width: 100%;
 }
 
@@ -42,6 +43,8 @@ body, html {
     margin: 0 0 20px;
     color: #ffde59;
     text-shadow: 2px 2px 0px #6b6b6b;
+    white-space: wrap;
+    line-height: 1.5em;
 }
 
 .content h1 span {
@@ -49,24 +52,16 @@ body, html {
     display: inline-block;
     color: #ffde59;
     text-decoration: none; /* Remove the default underline */
+    font-weight: bolder;
 }
+
+
 
 .content p {
     font-size: 1.2em;
     margin: 0 0 30px;
     color: #ffde59;
     text-shadow: 1px 1px 0px #6b6b6b;
-}
-
-.content h1 span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px; /* Adjust this value to change the distance from the text */
-    width: 100%;
-    height: 4px; /* Thickness of the underline */
-    background: linear-gradient(90deg, #ff5c5c 0%, #ffde59 100%); /* Gradient effect for the underline */
-    border-radius: 2px; /* Rounded corners for a smoother look */
 }
 
 .email-signup {
@@ -110,4 +105,53 @@ body, html {
 .email-signup button:hover {
     background-color: #ff3b3b;
     transform: scale(1.05);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.0em;
+    }
+    
+    .content h1 span{
+        /* Allow wrapping on smaller screens */
+        white-space: nowrap;
+        
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+
+    .email-signup input[type="email"],
+    .email-signup button {
+        width: 90%;
+        padding: 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.1em;
+    }
+
+    .content h1 span{
+        /* Allow wrapping on smaller screens */
+        /* white-space: nowrap; */
+    }
+
+
+    .content p {
+        font-size: 0.9em;
+    }
+
+    .email-signup input[type="email"],
+    .email-signup button {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.8em;
+    }
 }

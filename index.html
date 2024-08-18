@@ -15,12 +15,20 @@
         <div class="content">
             <h1>A <span>survival,</span> <span>resource management</span> <br> indie game!</h1>
             <p>Sign up now to get the latest updates and be part of the exclusive testing group!</p>
-            <div class="email-signup">
+            <form class="email-signup">
                 <input type="email" placeholder="Enter your email" required>
                 <button type="submit">Sign Up</button>
-            </div>
+            </form>
+            <p class="success-message" style="display: none;">Thank you for signing up! We'll keep you posted.</p>
+            <p class="error-message" style="display: none;">Something went wrong. Please try again.</p>
         </div>
     </div>
+
+    <div class="powered-by">
+        <a href="https://emailoctopus.com" target="_blank">Powered by EmailOctopus</a>
+    </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

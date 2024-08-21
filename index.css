@@ -47,7 +47,7 @@ swiper-slide {
 
 .content {
     z-index: 2;
-    padding: 20px;
+    padding: 10px;
     max-width: 90vw;
     width: 100%;
 }
@@ -157,7 +157,7 @@ swiper-slide {
 
 @media (max-width: 480px) {
     .content h1 {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
 

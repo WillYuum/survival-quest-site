@@ -4,23 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survival Quest</title>
+    <title>Biomic</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="hero-section">
-        <div class="overlay"></div>
-        <div class="content">
-            <h1>A <span>survival,</span> <span>resource management</span> <br> indie game!</h1>
-            <p>Sign up now to get the latest updates and be part of the exclusive testing group!</p>
-            <div class="octupus-form">
-                <script async src="https://eocampaign1.com/form/68baf01e-5d98-11ef-9726-6f91bc216034.js"
-                    data-form="68baf01e-5d98-11ef-9726-6f91bc216034"></script>
+    <swiper-container
+        class="swiper"
+        direction="vertical"
+        pagination="true"
+        pagination-clickable="true"
+        style="
+            --swiper-pagination-color: #FFBA08; /* Active bullet color */
+            --swiper-pagination-bullet-inactive-color: #999999; /* Inactive bullet color */
+            --swiper-pagination-bullet-inactive-opacity: 1; /* Opacity for inactive bullets */
+            --swiper-pagination-bullet-horizontal-gap: 6px; /* Space between bullets */
+            --swiper-pagination-bullet-vertical-gap: 6px; /* Space between bullets vertically */
+        ">        <swiper-slide>
+            <div class="hero-section">
+                <div class="overlay"></div>
+                <div class="content">
+                    <h1>A survival,<span>resource management</span> <br> indie game!</h1>
+                    <p>Sign up now to get the latest updates and be part of the exclusive testing group!</p>
+                    <div class="octupus-form">
+                        <script async src="https://eocampaign1.com/form/68baf01e-5d98-11ef-9726-6f91bc216034.js"
+                            data-form="68baf01e-5d98-11ef-9726-6f91bc216034"></script>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </swiper-slide>
+
+
+        <swiper-slide>
+            <!-- Biomes Connecting -->
+            <div class="content-item">
+                <img src="assets/biomes_connections.png" alt="">
+                <div class="text-overlay">The juicy feature of the game.</div>
+            </div>
+        </swiper-slide>
+
+
+        <swiper-slide>
+            <!-- micro nutrients content -->
+            <div class="content-item">
+                <img src="assets/micro_nutrients.png" alt="">
+                <div class="text-overlay">Gather different typs of resources.</div>
+            </div>
+        </swiper-slide>
+
+
+        <swiper-slide>
+
+            <!-- Go Deep content -->
+            <div class="content-item">
+                <img src="assets/go_deep_roots.png" alt="">
+                <div class="text-overlay">Search deep grounds to uncover new abilities.</div>
+            </div>
+        </swiper-slide>
+
+
+        <swiper-slide>
+            <!-- Survive the seasons content -->
+            <div class="content-item survive-season">
+                <img src="assets/summer.png" alt="">
+                <div class="text-overlay">Survive the seasons, Especially the WINTER!</div>
+            </div>
+        </swiper-slide>
+
+        <!-- <div class="game-content-section"> -->
+        <!-- </div> -->
+    </swiper-container>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>

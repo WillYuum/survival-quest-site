@@ -21,6 +21,39 @@ html {
     z-index: 2; /* Ensure it is above the overlay */
 }
 
+/* General Contact Button Styles */
+.contact-button {
+    position: fixed;
+    bottom: 20px;  
+    left: 20px;  
+    background-color: #FFBA08;  
+    color: #000;  
+    font-size: 0.68em;
+    line-height: 12px;
+    padding: 10px;  
+    border-radius: 50%;  
+    text-decoration: none; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    width: 60px;   
+    height: 60px;  
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 3;  
+    text-align: center;  
+}
+
+.contact-button:hover {
+    background-color: #e0a600; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.contact-button:active {
+    background-color: #d18e00; /* Even darker background when clicked */
+    transform: scale(1); /* Reset size on click */
+}
+
 swiper-container {
     width: 100%;
     height: 100%;
@@ -165,6 +198,12 @@ swiper-slide {
         font-size: 1em;
         padding: 8px;
     }
+
+    .contact-button {
+        font-size: 0.8em; /* Adjust font size */
+        width: 50px; /* Adjust size for smaller screens */
+        height: 50px; /* Adjust size for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -182,5 +221,12 @@ swiper-slide {
         width: 100%;
         padding: 10px;
         font-size: 0.8em;
+    }
+
+
+    .contact-button {
+        font-size: 0.5em; /* Further adjust font size */
+        width: 45px; /* Further adjust size for mobile screens */
+        height: 45px; /* Further adjust size for mobile screens */
     }
 }

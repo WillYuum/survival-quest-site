@@ -36,5 +36,5 @@ function enableGoogleAnalytics() {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); // Replace again
+    gtag('config', 'G-2XKNN5GCHQ');
 }
